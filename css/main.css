@@ -4,6 +4,7 @@
   --secondary-textcolor: #212121;
   --acent-color: #2196f3;
   --bg-color-footer: #2f303a;
+  --bg-color-button:#F5F4FA;
 }
 
 .visually-hidden {
@@ -105,4 +106,31 @@ footer {
 .footer-contacts {
   color: var(--main-textcolor);
   font-style: normal;
+}
+
+
+/* Portfolio */
+.button{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.8;
+  background-color: var(--bg-color-button);
+  color: var(--secondary-textcolor);
+  border: none;
+}
+.button:hover, .button:focus{
+  background-color: var(--acent-color);
+  color: var(--bacground-color);
+}
+.gallery-title{
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.36;
+  color: var(--secondary-textcolor);
+}
+.gallery-text{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--primary-textcolor);
 }
