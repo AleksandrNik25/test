@@ -78,7 +78,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0  15px ;
 }
 /* nav */
 .container-header {
@@ -254,7 +254,8 @@ footer .container {
 
 /* Portfolio */
 .gallery__section{
-  padding: 94px 0;
+ padding-top: 94px;
+ padding-bottom: 64px;
 }
 .filter {
   display: flex;
@@ -285,8 +286,7 @@ footer .container {
  
 }
 .gallery li {
-  width:370px;
- 
+  width:370px; 
   margin-bottom: 30px;
   border-radius: 5px;
   box-shadow: var(--main-textcolor) 0px 0px 1px;
