@@ -228,7 +228,7 @@ footer {
   background-color: var(--bg-color-footer);
 }
 footer .container {
-  padding: 60px 0;
+  padding: 60px 15px;
 }
 .logo-footer {
   display: block;
