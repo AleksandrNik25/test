@@ -5,6 +5,7 @@
   --acent-color: #2196f3;
   --bg-color-footer: #2f303a;
   --bg-color-button: #f5f4fa;
+  --color-cliets: #afb1b8;
 }
 
 .visually-hidden {
@@ -55,8 +56,12 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
   color: var(--main-textcolor);
-}
 
+  
+}
+main{
+  min-height: calc(100vh - (80px + 265px));
+}
 .header {
   border-bottom: var(--main-textcolor) 0.6px solid;
 }
@@ -114,11 +119,17 @@ body {
   margin-left: 50px;
 }
 .contact-link {
+  display: block;
   font-weight: 500;
   color: var(--main-textcolor);
   padding: 32px 0;
 }
-.contact-link::before {
+.contact-icon {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+/* .contact-link::before {
   content: " ";
   display: block;
   height: 16px;
@@ -126,13 +137,27 @@ body {
   margin-right: 10px;
   background-repeat: no-repeat;
   background-position: center;
+} */
+.icon-mail {
+  width: 16px;
+  height: 12px;
 }
-.icon-mail::before {
+.icon-tel {
+  width: 14px;
+  height: 16px;
+}
+/* background-color: #2196f3; */
+
+.contact-link:hover {
+  color: var(--acent-color);
+  fill: var(--acent-color);
+}
+/* .icon-mail::before {
   background-image: url(../images/envelope.svg);
-}
-.icon-phone::before {
+} */
+/* .icon-phone::before {
   background-image: url(../images/smartphone.svg);
-}
+} */
 
 .container-hero {
   text-align: center;
@@ -265,7 +290,7 @@ body {
   margin-bottom: 10px;
 }
 .command-position {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 /* Social Link */
@@ -283,7 +308,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.icon-instagram::after {
+/* .icon-instagram::after {
   background-image: url(../images/instagram.svg);
 }
 .icon-twitter::after {
@@ -294,19 +319,52 @@ body {
 }
 .icon-LinkEdin::after {
   background-image: url(../images/linkedin.svg);
+} */
+.social {
+  margin-bottom: 30px;
+}
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40px;
+  height: 40px;
+  fill: var(--main-textcolor);
+  border-radius: 50%;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+}
+.social-link:hover {
+  fill: var(--bacground-color);
+  background-color: var(--acent-color);
 }
 /* Footer */
 footer {
   background-color: var(--bg-color-footer);
-}
+  }
 footer .container {
   padding: 60px 15px;
+}
+.footer{
+  display: flex;
 }
 .logo-footer {
   display: block;
   color: var(--bacground-color);
   margin: 0;
   margin-bottom: 20px;
+}
+address{
+  margin-right: 70px;
 }
 .address-text {
   color: var(--bacground-color);
@@ -324,6 +382,89 @@ footer .container {
   flex-direction: column;
 }
 
+/*       <li class="footer-soc-link"><a href="http://">
+            <svg class="footer-soc-icon">
+              <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg> */
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footer-soc-link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  
+  border-radius: 50%;
+  fill: var(--bacground-color);
+  background-color: var(--main-textcolor);
+}
+.footer-soc-link a:hover{
+fill:var(--bacground-color);
+background-color: var(--acent-color);
+
+}
+.footer-soc-icon {
+  width: 20px;
+  height: 20px;
+}
+.join-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  color: var(--bacground-color);
+}
+
+
+/* Clients */
+.container-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* <ul class="clients-list">
+        <li class="clients-item"><a href="" class="cliets-link">
+          <svg class="cliets-icon"> */
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.cliets-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-cliets);
+  border-radius: 5px;
+  fill: var(--color-cliets);
+}
+.cliets-link:hover {
+  border: 1px solid var(--acent-color);
+  border-radius: 5px;
+  fill: var(--acent-color);
+}
+.cliets-icon {
+  display: block;
+  width: 106px;
+  height: 60px;
+}
 /* Portfolio */
 .gallery__section {
   padding-top: 94px;
@@ -391,3 +532,4 @@ footer .container {
   line-height: 1.2;
   color: var(--primary-textcolor);
 }
+
