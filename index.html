@@ -248,7 +248,7 @@
 
 
 
-  <div class="modal-overlay is-hidden" data-modal>
+  <div class="modal-overlay " data-modal>
     <div class="modal">
       <button class="modal-close" data-modal-close>
         <svg class="modal-close-icon">
@@ -257,27 +257,43 @@
       </button>
       <h2 class="modal-title">Залиште свої дані, ми вам передзвоним</h2>
       <form action="" class="modal-form">
-        <div class="form-input">
-          <label for="name" class="modal-label">Ім'я</label>
-          <input type="text" id="name" class="modal-input" />
-        </div>
-        <div class="form-input">
-          <label for="phone" class="modal-label">Телефон</label>
-          <input type="tel" id="phone" class="modal-input" />
-        </div>
-        <div class="form-input"><label for="email" class="modal-label">Email</label>
-          <input type="email" id="email" class="modal-input" />
-        </div>
-        <div class="form-input"><label for="message" class="modal-label">Повідомлення</label>
-          <textarea name="message" id="message" class="modal-textarea"></textarea>
-        </div>
-        <div class="form-input form-policy">
-          <input type="checkbox" name="polycy" id="polycy" class="modal-checkbox" />
-          <label for="polycy">Погоджуюся з розсилкою та приймаю Умови договору</label>
-        </div>
-        <button type="submit" class="modal-button button">Відправити</button>
 
-        </form>
+
+        <label class="modal-label">
+          <input type="text" class="modal-input" />
+          <span class="label">Ім'я</span>
+          <svg class="icon-phone" width="18px" height="18px">
+            <use href="./images/person.svg"></use>
+          </svg>
+        </label>
+        <label class="modal-label">
+          <input type="tel" class="modal-input" />
+          <span class="label">Телефон</span>
+          <svg class="icon-phone" width="18px" height="18px">
+            <use href="./images/phone.svg"></use>
+          </svg>
+        </label>
+        <label class="modal-label">
+          <input type="email" class="modal-input" />
+          <span class="label">Пошта</span>
+          <svg class="icon-phone" width="18px" height="18px">
+            <use href="./images/email.svg"></use>
+          </svg>
+        </label>
+
+        <label class="textarea-label modal-label">
+          <textarea name="message" class="modal-input textarea"></textarea>
+          <span class="label">Коментар</span>
+        </label>
+        <label class="polycy-label">
+          <input type="checkbox" name="polycy" class="modal-checkbox" />
+          <span class="polycy-lable-text">Погоджуюся з розсилкою та приймаю Умови договору</span>
+          <svg class="privacy-icon" width="16px" height="15px">
+            <use href="./images/pryvacy.svg"></use>
+          </svg>
+        </label>
+        <button type="submit" class="modal-button button">Відправити</button>
+      </form>
     </div>
   </div>
 
