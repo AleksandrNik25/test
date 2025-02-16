@@ -252,12 +252,12 @@
           <input type="email" name="appeals_email" class="appeals_email" >
           <span class="appeals-lable-text">Email</span>
         </label>
-        <div class="buttton-send"> 
-          <button class="button appeals-button">
+        <div  class="buttton-send"> 
+          <button class="button appeals-button" type="button">
           Підписатися</button>
           <svg class="icon-send" width="24px" height="24px">
             <use href="./images/sprite.svg#icon-send"></use>
-          </svg></div>
+          </svg></>
        
       </div>
     </div>
@@ -278,21 +278,21 @@
 
 
         <label class="modal-label">
-          <input type="text" class="modal-input" placeholder="Ivan Ivanovich" />
+          <input type="text" class="modal-input" placeholder="Ivan Ivanovich"  required />
           <span class="label">Ім'я</span>
           <svg class="icon-phone" width="18px" height="18px">
             <use href="./images/sprite.svg#icon-person"></use>
           </svg>
         </label>
         <label class="modal-label">
-          <input type="tel" class="modal-input"  placeholder="+380991234567"/>
+          <input type="tel" class="modal-input"  placeholder="+380991234567"  required/>
           <span class="label">Телефон</span>
           <svg class="icon-phone" width="18px" height="18px">
             <use href="./images/sprite.svg#icon-phone"></use>
           </svg>
         </label>
         <label class="modal-label">
-          <input type="email" class="modal-input" placeholder="mail@mail.com" />
+          <input type="email" class="modal-input" placeholder="mail@mail.com"   required/>
           <span class="label">Пошта</span>
           <svg class="icon-phone" width="18px" height="18px">
             <use href="./images/sprite.svg#icon-email-form"></use>
@@ -300,7 +300,7 @@
         </label>
 
         <label class="textarea-label modal-label">
-          <textarea name="message" class="modal-input textarea"></textarea>
+          <textarea name="message" class="modal-input textarea"  required></textarea>
           <span class="label">Коментар</span>
         </label>
         <label class="polycy-label">
