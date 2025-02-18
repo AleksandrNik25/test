@@ -1,0 +1,138 @@
+footer {
+    background-color: $bg-color-footer;
+  }
+  footer .container {
+    padding: 60px 15px;
+  }
+  .footer {
+    display: flex;
+  }
+  .logo-footer {
+    display: block;
+    color: $background-color;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  address {
+    margin-right: 70px;
+  }
+  .address-text {
+    color: $background-color;
+    margin-bottom: 9px;
+  }
+
+  .footer-contacts {
+    color: $main-textcolor;
+    font-style: normal;
+  }
+  .footer-contacts + .footer-contacts {
+    margin-top: 9px;
+  }
+  .footer__contacts__list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /*       <li class="footer-soc-link"><a href="http://">
+              <svg class="footer-soc-icon">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg> */
+  
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer-soc-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 40px;
+    height: 40px;
+  
+    border-radius: 50%;
+    fill: $background-color;
+    background-color: $main-textcolor;
+  }
+  .footer-soc-link a:hover {
+    fill: $background-color;
+    background-color: $acent-color;
+  }
+  .footer-soc-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .join-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: $background-color;
+  }
+  .appeals {
+    margin-left: auto;
+  }
+  .appeals-title {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .appeals-lable {
+    position: relative;
+  }
+  .appeals-lable-text {
+    position: absolute;
+    top: -2px;
+    left: 15px;
+  }
+  
+  .appeals_email {
+    width: 358px;
+    height: 50px;
+    padding: 3px;
+    padding-left: 55px;
+    border-radius: 4px;
+    border: 1px solid $main-textcolor;
+  }
+  .appeals_email:focus + .appeals-lable-text {
+    color: $acent-color;
+  }
+  .appeals_email:focus {
+    outline: 1px solid $acent-color;
+  }
+  
+  .button.appeals-button {
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    padding: 10px 28px;
+    padding-right: 62px;
+    border: 1px solid $acent-color;
+    background-color: $acent-color;
+    color: $background-color;
+  }
+  .buttton-send {
+    position: relative;
+    display: inline-block;
+  }
+  .icon-send {
+    position: absolute;
+    top: 13px;
+    right: 19px;
+    fill: $background-color;
+    width: 24px;
+    height: 24px;
+  }
+  .button.appeals-button:hover,
+  .button.appeals-button:focus {
+    border: 1px solid $acent-color;
+    color: $acent-color;
+    background-color: $bg-color-button;
+  }
+  .button.appeals-button:hover + .icon-send,
+  .button.appeals-button:focus + .icon-send {
+    fill: $acent-color;
+  }

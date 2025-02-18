@@ -12,33 +12,33 @@
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
   <header class="header">
-    <div class="container-header container">
+    <div class="container__header container">
       <div class="logo__and__nav">
-        <a href="./" class="logo"> <span>Web</span>Studio</a>
+        <a href="./" class="logo logo--position"> <span class="logo--acent">Web</span>Studio</a>
         <nav>
-          <ul class="nav">
-            <li><a href="./index.html" class="nav-link active-link">Студія</a></li>
-            <li><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
-            <li><a href="./contact.html" class="nav-link">Контакти</a></li>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="./index.html" class="nav__link active-link">Студія</a></li>
+            <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
+            <li class="nav__item"><a href="./contact.html" class="nav__link">Контакти</a></li>
           </ul>
         </nav>
       </div>
-      <ul class="nav-contacts">
-        <li class="contact-item">
-          <a href="mailto:info@devstudio.com" class="contact-link contact-icon">
-            <svg class="icon icon-mail" width="16px" height="12px">
+      <ul class="nav__contacts">
+        <li class="contacts__item">
+          <a href="mailto:info@devstudio.com" class="contact__link contact__icon">
+            <svg class="icon__mail" width="16px" height="12px">
               <use href="./images/sprite.svg#icon-logo-mail"></use>
             </svg>
             info@devstudio.com</a>
         </li>
-        <li class="contact-item">
-          <a href="tel:+380961111111" class="contact-link contact-icon">
-            <svg class="icon icon-tel" width="10px" height="16px">
+        <li class="contacts__item">
+          <a href="tel:+380961111111" class="contact__link contact__icon">
+            <svg class=" icon__tel" width="14px" height="16px">
               <use href="./images/sprite.svg#icon-logo-tel"></use>
             </svg>+380961111111</a>
         </li>
@@ -49,37 +49,37 @@
 
   <main>
     <section>
-      <div class="container container-hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
+      <div class="container container__hero">
+        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
     <section class="container">
       <h2 class="visually-hidden">преимущества</h2>
-      <ul class="advantages-list">
-        <li class="advantages icon-advantages icon-antenna">
-          <h3 class="advantage-title title">УВАГА ДО ДЕТАЛЕЙ</h3>
-          <p>
+      <ul class="advantages__list">
+        <li class="advantages__item  icon-antenna">
+          <h3 class="advantage__title title">УВАГА ДО ДЕТАЛЕЙ</h3>
+          <p class="advantage__text">
             Ідейні міркування, і навіть початок повсякденної роботи з
             формування позиції.
           </p>
         </li>
-        <li class="advantages icon-advantages icon-clock">
+        <li class="advantages__item icon-clock">
           <h3 class="advantage-title title">ПУНКТУАЛЬНІСТЬ</h3>
-          <p>
+          <p class="advantage__text">
             Завдання організації, особливо рамки і місце навчання кадрів тягне
             у себе.
           </p>
         </li>
-        <li class="advantages icon-advantages icon-diagram">
+        <li class="advantages__item icon-diagram">
           <h3 class="advantage-title title">ПЛАНУВАННЯ</h3>
-          <p>
+          <p class="advantage__text">
             Так само консультація з широким активом значною мірою зумовлює.
           </p>
         </li>
-        <li class="advantages icon-advantages icon-astronaut">
+        <li class="advantages__item icon-astronaut">
           <h3 class="advantage-title title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-          <p>
+          <p class="advantage__text">
             Значимість цих проблем настільки очевидна, що реалізація планових
             завдань.
           </p>
@@ -87,26 +87,26 @@
       </ul>
     </section>
     <section class="container">
-      <h2 class="work-title title">Чим ми займаємося</h2>
+      <h2 class="work__title title">Чим ми займаємося</h2>
       <ul class="work__list">
-        <li class="work__list__item"><img src="./images/1.jpg" alt="1" width="370" />
-          <p class="work__list__text">Десктопні додатки</p>
+        <li class="work__item"><img src="./images/1.jpg" alt="1" width="370" />
+          <p class="work__text">Десктопні додатки</p>
         </li>
-        <li class="work__list__item"><img src="./images/2.jpg" alt="2" width="370" />
-          <p class="work__list__text">Мобільні додатки</p>
+        <li class="work__item"><img src="./images/2.jpg" alt="2" width="370" />
+          <p class="work__text">Мобільні додатки</p>
         </li>
-        <li class="work__list__item"><img src="./images/3.jpg" alt="3" width="370" />
-          <p class="work__list__text">Дизайнерські рішення</p>
+        <li class="work__item"><img src="./images/3.jpg" alt="3" width="370" />
+          <p class="work__text">Дизайнерські рішення</p>
         </li>
       </ul>
     </section>
     <section class="container command">
-      <h2 class="command-title title">Наша команда</h2>
-      <ul class="command-list">
-        <li class="command-item">
-          <img src="./images/k1.jpg" alt="" width="270" />
-          <h3 class="command-name">Ігор Дем'яненко</h3>
-          <p class="command-position">Product Designer</p>
+      <h2 class="command__title title">Наша команда</h2>
+      <ul class="command__list">
+        <li class="command__item">
+          <img src="./images/k1.jpg" alt="" width="270" class="command__img" />
+          <h3 class="command__name">Ігор Дем'яненко</h3>
+          <p class="command__position">Product Designer</p>
           <ul class="social">
             <li>
               <a href="./" class="social-link">
@@ -126,10 +126,10 @@
                 </svg></a></li>
           </ul>
         </li>
-        <li class="command-item">
+        <li class="command__item">
           <img src="./images/k2.jpg" alt="" width="270" />
-          <h3 class="command-name">Ольга Рєпіна</h3>
-          <p class="command-position">Frontend Developer</p>
+          <h3 class="command__name">Ольга Рєпіна</h3>
+          <p class="command__position">Frontend Developer</p>
           <ul class="social">
             <li><a href="./" class="social-link"><svg class="social-icon">
                   <use href="./images/sprite.svg#icon-instagram"></use>
@@ -145,10 +145,10 @@
                 </svg></a></li>
           </ul>
         </li>
-        <li class="command-item">
+        <li class="command__item">
           <img src="./images/k3.jpg" alt="" width="270" />
-          <h3 class="command-name">Микола Тарасов</h3>
-          <p class="command-position">Marketing</p>
+          <h3 class="command__name">Микола Тарасов</h3>
+          <p class="command__position">Marketing</p>
           <ul class="social">
             <li><a href="./" class="social-link"><svg class="social-icon">
                   <use href="./images/sprite.svg#icon-instagram"></use>
@@ -164,10 +164,10 @@
                 </svg></a></li>
           </ul>
         </li>
-        <li class="command-item">
-          <img src="./images/k4.jpg" alt="" width="270" />
-          <h3 class="command-name">Михайло Єрмаков</h3>
-          <p class="command-position">UI Designer</p>
+        <li class="command__item">
+          <img src="./images/k4.jpg" alt="" width="270" class="command__img" />
+          <h3 class="command__name">Михайло Єрмаков</h3>
+          <p class="command__position">UI Designer</p>
           <ul class="social">
             <li><a href="./" class="social-link"><svg class="social-icon">
                   <use href="./images/sprite.svg#icon-instagram"></use>
@@ -185,27 +185,27 @@
         </li>
       </ul>
     </section>
-    <section class="container container-clients">
-      <h1 class="title client-title">Постійні клієнти</h1>
-      <ul class="clients-list">
-        <li class="clients-item"><a href="" class="cliets-link">
-            <svg class="cliets-icon">
+    <section class="container container__clients">
+      <h1 class="title client__title">Постійні клієнти</h1>
+      <ul class="clients__list">
+        <li><a href="" class=" cliets__link">
+            <svg class="cliets__icon">
               <use href="./images/sprite.svg#icon-client1"></use>
             </svg>
           </a></li>
-        <li class="clients-item"><a href="" class="cliets-link"><svg class="cliets-icon">
+        <li><a href="" class=" cliets__link"><svg class="cliets__icon">
               <use href="./images/sprite.svg#icon-client2"></use>
             </svg></a></li>
-        <li class="clients-item"><a href="" class="cliets-link"><svg class="cliets-icon">
+        <li><a href="" class=" cliets__link"><svg class="cliets__icon">
               <use href="./images/sprite.svg#icon-client3"></use>
             </svg></a></li>
-        <li class="clients-item"><a href="" class="cliets-link"><svg class="cliets-icon">
+        <li><a href="" class=" cliets__link"><svg class="cliets__icon">
               <use href="./images/sprite.svg#icon-client4"></use>
             </svg></a></li>
-        <li class="clients-item"><a href="" class="cliets-link"><svg class="cliets-icon">
+        <li><a href="" class=" cliets__link"><svg class="cliets__icon">
               <use href="./images/sprite.svg#icon-client5"></use>
             </svg></a></li>
-        <li class="clients-item"><a href="" class="cliets-link"><svg class="cliets-icon">
+        <li><a href="" class=" cliets__link"><svg class="cliets__icon">
               <use href="./images/sprite.svg#icon-client6"></use>
             </svg></a></li>
       </ul>
@@ -249,18 +249,18 @@
       <div class="appeals">
         <h2 class="tiitle appeals-title ">Підпишіться на розсилку</h2>
         <label class="appeals-lable">
-          <input type="email" name="appeals_email" class="appeals_email" >
+          <input type="email" name="appeals_email" class="appeals_email">
           <span class="appeals-lable-text">Email</span>
         </label>
-        <div  class="buttton-send"> 
+        <div class="buttton-send">
           <button class="button appeals-button" type="button">
-          Підписатися</button>
+            Підписатися</button>
           <svg class="icon-send" width="24px" height="24px">
             <use href="./images/sprite.svg#icon-send"></use>
           </svg></>
-       
+
+        </div>
       </div>
-    </div>
 
   </footer>
 
@@ -278,21 +278,21 @@
 
 
         <label class="modal-label">
-          <input type="text" class="modal-input" placeholder="Ivan Ivanovich"  required />
+          <input type="text" class="modal-input" placeholder="Ivan Ivanovich" required />
           <span class="label">Ім'я</span>
           <svg class="icon-phone" width="18px" height="18px">
             <use href="./images/sprite.svg#icon-person"></use>
           </svg>
         </label>
         <label class="modal-label">
-          <input type="tel" class="modal-input"  placeholder="+380991234567"  required/>
+          <input type="tel" class="modal-input" placeholder="+380991234567" required />
           <span class="label">Телефон</span>
           <svg class="icon-phone" width="18px" height="18px">
             <use href="./images/sprite.svg#icon-phone"></use>
           </svg>
         </label>
         <label class="modal-label">
-          <input type="email" class="modal-input" placeholder="mail@mail.com"   required/>
+          <input type="email" class="modal-input" placeholder="mail@mail.com" required />
           <span class="label">Пошта</span>
           <svg class="icon-phone" width="18px" height="18px">
             <use href="./images/sprite.svg#icon-email-form"></use>
@@ -300,12 +300,12 @@
         </label>
 
         <label class="textarea-label modal-label">
-          <textarea name="message" class="modal-input textarea"  required></textarea>
+          <textarea name="message" class="modal-input textarea" required></textarea>
           <span class="label">Коментар</span>
         </label>
         <label class="polycy-label">
           <input type="checkbox" name="polycy" class="modal-checkbox" />
-          <span class="polycy-lable-text">Погоджуюся з розсилкою та приймаю 
+          <span class="polycy-lable-text">Погоджуюся з розсилкою та приймаю
             <a href="./" target="_blank" rel="noopener noreferrer" class="polycy-link">Умови договору</a>
           </span>
           <svg class="privacy-icon" width="16px" height="16px">

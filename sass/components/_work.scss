@@ -1,0 +1,34 @@
+.work__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+.work__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.work__list {
+  display: flex;
+  margin-bottom: 94px;
+}
+.work__item {
+  position: relative;
+
+  width: calc(100% - 90px / 3);
+}
+.work__item:not(:first-child) {
+  margin-left: 30px;
+}
+.work__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 16px;
+  line-height: 1.3;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: $background-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}

@@ -12,33 +12,33 @@
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
-   <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body>
   <header class="header">
-    <div class="container-header container">
+    <div class="container__header container">
       <div class="logo__and__nav">
-        <a href="./" class="logo"> <span>Web</span>Studio</a>
+        <a href="./" class="logo logo--position"> <span class="logo--acent">Web</span>Studio</a>
         <nav>
-          <ul class="nav">
-            <li><a href="./index.html" class="nav-link ">Студія</a></li>
-            <li><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
-            <li><a href="./contact.html" class="nav-link active-link">Контакти</a></li>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="./index.html" class="nav__link ">Студія</a></li>
+            <li class="nav__item"><a href="./portfolio.html" class="nav__link ">Портфоліо</a></li>
+            <li class="nav__item"><a href="./contact.html" class="nav__link active-link">Контакти</a></li>
           </ul>
         </nav>
       </div>
-      <ul class="nav-contacts">
-        <li class="contact-item">
-          <a href="mailto:info@devstudio.com" class="contact-link contact-icon">
-            <svg class="icon icon-mail" width="16px" height="12px">
+      <ul class="nav__contacts">
+        <li class="contacts__item">
+          <a href="mailto:info@devstudio.com" class="contact__link contact__icon">
+            <svg class="icon__mail" width="16px" height="12px">
               <use href="./images/sprite.svg#icon-logo-mail"></use>
             </svg>
             info@devstudio.com</a>
         </li>
-        <li class="contact-item">
-          <a href="tel:+380961111111" class="contact-link contact-icon">
-            <svg class="icon icon-tel" width="10px" height="16px">
+        <li class="contacts__item">
+          <a href="tel:+380961111111" class="contact__link contact__icon">
+            <svg class=" icon__tel" width="14px" height="16px">
               <use href="./images/sprite.svg#icon-logo-tel"></use>
             </svg>+380961111111</a>
         </li>
@@ -46,60 +46,61 @@
     </div>
   </header>
 
- <main></main>
+  <main></main>
 
- <footer>
-  <div class="container footer">
-    <address>
-      <a href="" class="logo logo-footer"><span>Web</span>Studio</a>
-      <p class="address-text">м. Київ, пр-т Лесі Українки, 26</p>
-      <div class="footer__contacts__list">
-        <a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a>
-        <a href="tel:++380961111111" class="footer-contacts">+380961111111</a>
+  <footer>
+    <div class="container footer">
+      <address>
+        <a href="" class="logo logo-footer"><span>Web</span>Studio</a>
+        <p class="address-text">м. Київ, пр-т Лесі Українки, 26</p>
+        <div class="footer__contacts__list">
+          <a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a>
+          <a href="tel:++380961111111" class="footer-contacts">+380961111111</a>
+        </div>
+      </address>
+      <div class="join">
+        <h2 class="join-title title">приєднуйтесь</h2>
+        <ul class="footer-social">
+          <li class="footer-soc-link"><a href="./">
+              <svg class="footer-soc-icon">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a></li>
+          <li class="footer-soc-link"><a href="./">
+              <svg class="footer-soc-icon">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a></li>
+          <li class="footer-soc-link"><a href="./">
+              <svg class="footer-soc-icon">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a></li>
+          <li class="footer-soc-link"><a href="./">
+              <svg class="footer-soc-icon">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a></li>
+        </ul>
       </div>
-    </address>
-    <div class="join">
-      <h2 class="join-title title">приєднуйтесь</h2>
-      <ul class="footer-social">
-        <li class="footer-soc-link"><a href="./">
-            <svg class="footer-soc-icon">
-              <use href="./images/sprite.svg#icon-instagram"></use>
-            </svg>
-          </a></li>
-        <li class="footer-soc-link"><a href="./">
-            <svg class="footer-soc-icon">
-              <use href="./images/sprite.svg#icon-twitter"></use>
-            </svg>
-          </a></li>
-        <li class="footer-soc-link"><a href="./">
-            <svg class="footer-soc-icon">
-              <use href="./images/sprite.svg#icon-facebook"></use>
-            </svg>
-          </a></li>
-        <li class="footer-soc-link"><a href="./">
-            <svg class="footer-soc-icon">
-              <use href="./images/sprite.svg#icon-linkedin"></use>
-            </svg>
-          </a></li>
-      </ul>
-    </div>
-    <div class="appeals">
-      <h2 class="tiitle appeals-title ">Підпишіться на розсилку</h2>
-      <label class="appeals-lable">
-        <input type="email" name="appeals_email" class="appeals_email" >
-        <span class="appeals-lable-text">Email</span>
-      </label>
-      <div class="buttton-send"> 
-        <button class="button appeals-button">
-        Підписатися</button>
-        <svg class="icon-send" width="24px" height="24px">
-          <use href="./images/sprite.svg#icon-send"></use>
-        </svg></div>
-     
-    </div>
-  </div>
+      <div class="appeals">
+        <h2 class="tiitle appeals-title ">Підпишіться на розсилку</h2>
+        <label class="appeals-lable">
+          <input type="email" name="appeals_email" class="appeals_email">
+          <span class="appeals-lable-text">Email</span>
+        </label>
+        <div class="buttton-send">
+          <button class="button appeals-button">
+            Підписатися</button>
+          <svg class="icon-send" width="24px" height="24px">
+            <use href="./images/sprite.svg#icon-send"></use>
+          </svg>
+        </div>
 
-</footer>
+      </div>
+    </div>
+
+  </footer>
 </body>
 
 </html>
