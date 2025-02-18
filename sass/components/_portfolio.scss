@@ -27,7 +27,7 @@
   .button:hover,
   .button:focus {
     background-color: $acent-color;
-    color: v$background-color;
+    color: $background-color;
   }
   .gallery {
     display: flex;
