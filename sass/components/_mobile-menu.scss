@@ -1,0 +1,26 @@
+.nav {
+  position: absolute;
+  top: $header-height;
+  left: 0;
+  width: 100%;
+  padding: 40px 48px;
+  background-color: $background-color;
+  height: calc(100vh - #{$header-height});
+  transform: translatX(0);
+  transition: transform 0.3s $cubic-bezier;
+
+  &.is-open {
+    transform: translateX(-100%);
+  }
+}
+.menu__button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.container__header {
+  position: relative;
+}

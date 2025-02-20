@@ -1,7 +1,9 @@
 @import "./utils/utils";
+@import "./base/breakpoints";
 @import "./base/base";
 @import"./parshal/parshal";
 @import"./components/header";
+@import"./components/mobile-menu";
 @import"./components/hero";
 @import"./components/advantages";
 @import"./components/command";
@@ -9,4 +11,5 @@
 @import"./components/cliets";
 @import"./components/footer";
 @import"./components/modal";
+
 
