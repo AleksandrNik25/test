@@ -1,28 +1,30 @@
 .command {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
   .command__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .command__list {
-    display: flex;
+    // display: flex;
     text-align: center;
   }
   .command__item {
-    width: calc(100% - 90px / 4);
+max-width: 450px;
+    // width: calc(100% - 90px / 4);
     border: 1px solid #e0e0e0;
     border-radius: 5px;
   }
   .command__item:not(:first-child) {
-    margin-left: 30px;
+    margin-top: 16px;
   }
   .command__img {
-    margin-bottom: 30px;
+    width: 100%;
+    margin-bottom: 16px;
   }
   .command__name {
     font-weight: 500;
@@ -64,7 +66,11 @@
   } */
   .social {
     margin-bottom: 30px;
+// &__item:not(:last-child){
+//   margin-bottom: 16px;
+// }
   }
+  
   .social-list {
     display: flex;
     align-items: center;

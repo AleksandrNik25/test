@@ -35,9 +35,9 @@
     letter-spacing: 0.03em;
     color: $main-textcolor;
   }
-  main {
-    min-height: calc(100vh - (80px + 265px));
-  }
+  // main {
+  //   min-height: calc(100vh - (80px + 265px));
+  // }
   .container {
     max-width: $mobile;
     margin: 0 auto;

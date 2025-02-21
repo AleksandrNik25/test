@@ -1,16 +1,18 @@
 .nav {
+  
   position: absolute;
   top: $header-height;
   left: 0;
   width: 100%;
-  padding: 40px 48px;
+  padding: 25px 15px;
   background-color: $background-color;
   height: calc(100vh - #{$header-height});
-  transform: translatX(0);
+  transform: translatY(0);
   transition: transform 0.3s $cubic-bezier;
+  overflow: scroll;
 
   &.is-open {
-    transform: translateX(-100%);
+    transform: translateY(-200%);
   }
 }
 .menu__button {
@@ -24,3 +26,20 @@
 .container__header {
   position: relative;
 }
+// .js-open-menu{
+//   display: none;
+// }
+
+  .js-menu-container.is-open + .menu__button>.icon__menu>.js-open-menu{
+    display: block;
+  }
+  .js-menu-container + .menu__button>.icon__menu>.js-open-menu{
+    display: none;
+   }
+   .js-menu-container.is-open + .menu__button>.icon__menu>.js-close-menu{
+    display: none;
+  }
+  .js-menu-container + .menu__button>.icon__menu>.js-close-menu{
+    display: block;
+   }
+
